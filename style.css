@@ -57,11 +57,8 @@ article {
 }
 aside {
   flex: 1;
-  margin: 0 auto;
   display: flex;
   padding: 3em;
-  flex-direction: column;
-  gap: 100px;
   border-left: 1px solid #eee;
 }
 aside h3 {
