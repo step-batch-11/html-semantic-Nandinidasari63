@@ -2,26 +2,20 @@
   margin: 0px;
   padding: 0px;
 }
-
 body {
-  border: 1px solid #eee;
   width: 80%;
-  padding: 3em;
-  padding-bottom: 5em;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: -5px -5px 2px #eee, 5px 5px 2px #eee;
   color: hsla(0, 0%, 0%, 90%);
   font-size: 22px;
 }
-
 hgroup {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  color: hsla(0, 0%, 0%, 70%);
-  font-size: 24px;
+  color: hsla(0, 0%, 0%, 90%);
 }
 
 dialog {
@@ -35,21 +29,18 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   margin: 20px 0px;
-  background-color: whitesmoke;
   padding: 1em;
   font-size: 30px;
 }
 nav {
   position: sticky;
-  top: 0px;
+  top: 10px;
+  background-color: green;
+  z-index: 100;
 }
 main {
-  width: 300%;
+  flex: 4;
   line-height: 2em;
-  padding-left: 2em;
-}
-li:hover {
-  color: green;
 }
 
 article > header {
@@ -62,14 +53,13 @@ h3 {
 }
 article {
   /* border: 1px solid #eee; */
-  padding: 2em;
-  width: 100%;
+  padding: 3em;
 }
 aside {
-  width: 80%;
+  flex: 1;
   margin: 0 auto;
   display: flex;
-  padding: 2em;
+  padding: 3em;
   flex-direction: column;
   gap: 100px;
   border-left: 1px solid #eee;
@@ -78,7 +68,20 @@ aside h3 {
   font-weight: 300;
 }
 body > section {
+  border: 1px solid #eee;
+  height: 80%;
   display: flex;
   border: 1px solid hsl(0, 0%, 75%);
-  gap: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 90%);
+}
+
+a:hover {
+  color: hsla(0, 94%, 30%, 0.625);
+}
+footer {
+  background-color: lightgreen;
 }
